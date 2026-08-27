@@ -1,0 +1,513 @@
+```css
+/* ================================
+   Google Fonts
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* ================================
+   Global Styles
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background: #f8f5f0;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+
+/* ================================
+   Hero Section
+================================ */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.65),
+            rgba(20, 20, 20, 0.65)
+        ),
+        url("apj-kalam.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.small-title {
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 20px;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+
+/* ================================
+   Button
+================================ */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #ffffff;
+    color: #222;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #eeeeee;
+}
+
+
+/* ================================
+   Section Title
+================================ */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    display: block;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+}
+
+
+/* ================================
+   About Section
+================================ */
+
+.about {
+    background: #ffffff;
+}
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.image-box {
+    width: 100%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+
+    color: #555;
+}
+
+
+/* ================================
+   Achievements Section
+================================ */
+
+.achievements {
+    background: #f0ebe3;
+}
+
+.timeline {
+    position: relative;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 120px;
+
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #999;
+}
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 40px;
+
+    position: relative;
+
+    margin-bottom: 40px;
+}
+
+.year {
+    font-weight: 600;
+
+    font-size: 18px;
+
+    text-align: right;
+}
+
+.timeline-content {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    position: relative;
+}
+
+.timeline-content::before {
+    content: "";
+
+    position: absolute;
+
+    left: -48px;
+
+    top: 27px;
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #555;
+
+    border: 4px solid #f0ebe3;
+}
+
+.timeline-content h3 {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: #666;
+}
+
+
+/* ================================
+   Quote Section
+================================ */
+
+.quote-section {
+    padding: 100px 20px;
+
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+}
+
+.quote-box {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.quote-mark {
+    font-family: Georgia, serif;
+
+    font-size: 90px;
+
+    line-height: 60px;
+}
+
+blockquote {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+
+    margin: 20px 0 25px;
+}
+
+.quote-box p {
+    font-size: 16px;
+
+    opacity: 0.8;
+}
+
+
+/* ================================
+   Inspiration Section
+================================ */
+
+.inspiration {
+    background: #ffffff;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 35px 30px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 2px;
+}
+
+.card h3 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+.footer {
+    background: #111;
+
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 900px) {
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .image-box {
+        max-width: 400px;
+
+        margin: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .hero {
+        min-height: 90vh;
+
+        background-attachment: scroll;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .small-title {
+        font-size: 14px;
+
+        letter-spacing: 2px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .image-box img {
+        height: 350px;
+    }
+
+    /* Timeline */
+
+    .timeline::before {
+        left: 8px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding-left: 35px;
+    }
+
+    .year {
+        text-align: left;
+    }
+
+    .timeline-content::before {
+        left: -35px;
+
+        top: 20px;
+    }
+
+    /* Quote */
+
+    blockquote {
+        font-size: 24px;
+    }
+
+    /* Cards */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 28px 24px;
+    }
+}
+```
